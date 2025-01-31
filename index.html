@@ -22,7 +22,7 @@
 						<ul class="nav-links">
 							<li><a href="#home">Home</a></li>
 							<li><a href="#about_us">About</a></li>
-							<li><a href="#">Services</a></li>
+							<li><a href="#get-in-touch">Join us</a></li>
 							<li><a href="#get-in-touch">Contact</a></li>
 						</ul>
 					</nav>
@@ -113,6 +113,7 @@
 					<section class="wrapper style1 align-center onscroll-fade-in">
 						<div class="inner">
 							<h2>Meet our Founders</h2>
+							<p id="founders_story_text"></p>
 							<div class="items style1 medium onscroll-fade-in">
 								<section class="popup-trigger" data-target="popup-alice">
 									<img src="images/icons/icon_alice.jpg" alt="Alice Image" class="custom-icon">
@@ -149,20 +150,21 @@
 					<section id="get-in-touch" class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
-							<form method="post" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSevTEf4Z7cKh1Q0ac5rDDCbLgiJAgaOPtPh7dXc6SgpVUb3yA/formResponse">
+							<form method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSevTEf4Z7cKh1Q0ac5rDDCbLgiJAgaOPtPh7dXc6SgpVUb3yA/formResponse">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
-										<input type="text" name="entry.184585754" id="name" value="" />
+										<input type="text" name="entry.184585754" id="name" />
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="email" name="entry.1381626861" id="email" value="" />
+										<input type="email" name="entry.1381626861" id="email" />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
 										<textarea name="entry.757273583" id="message" rows="6" placeholder="What brings you to SheSpeaks? Share your goals, availability, or any questions you have. We're here to help."></textarea>
 									</div>
+									<input type="hidden" name="dlut" value="1738352212341">
 								</div>
 								<ul class="actions special">
 									<li><input type="submit" name="send message" id="submit" value="Send Message" /></li>
@@ -201,6 +203,7 @@
 	<script>
 		// Load content into different elements
 		loadContent('text/about_us.txt', 'about_us_text', section="p");
+		loadContent('text/founders_story.txt', 'founders_story_text', section="p");
 		loadContent('text/profile_laila.txt', 'profile_laila');
 		loadContent('text/profile_alice.txt', 'profile_alice');
 	</script>
