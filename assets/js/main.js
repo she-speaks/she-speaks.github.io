@@ -372,3 +372,14 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+function loadContent(filePath, elementId) {
+	fetch(filePath)
+		.then(response => response.text())
+		.then(data => {
+			document.getElementById(elementId).innerText = data;
+		})
+		.catch(error => console.error('Error fetching the content:', error));
+}
