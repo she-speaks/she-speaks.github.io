@@ -8643,3 +8643,47 @@ input, select, textarea {
     cursor: pointer;
 	z-index: 10;
 }
+
+/* Sticky Header */
+.header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #e926df;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 15px 20px;
+	z-index: 1000;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+	font-size: 20px;
+}
+
+.logo {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.nav-links {
+	list-style: none;
+	display: flex;
+	gap: 20px;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li {
+	display: inline;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: white;
+	transition: color 0.3s;
+}
+
+.nav-links a:hover {
+	color: #f4a261;
+}

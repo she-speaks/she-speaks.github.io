@@ -375,11 +375,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-function loadContent(filePath, elementId) {
+function loadContent(filePath, elementId, section="div") {
 	fetch(filePath)
 		.then(response => response.text())
 		.then(data => {
-			document.getElementById(elementId).innerText = data;
+			const element = document.getElementById(elementId);
+			if (section === "p") {
+				element.innerHTML = `<p>${data}</p>`;
+			} else {
+				element.innerText = data;
+			}
 		})
 		.catch(error => console.error('Error fetching the content:', error));
 }
