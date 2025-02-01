@@ -20,7 +20,7 @@
 			<div id="wrapper" class="divided">
 				<header class="header">
 					<div class="logo">
-						<a href="#home">💃</a> <!-- Wrapped the logo in an anchor tag -->
+						<a href="#home">💃</a>
 					</div>
 					<nav>
 						<ul class="nav-links">
@@ -30,7 +30,13 @@
 							<li><a href="#">FAQs</a></li>
 						</ul>
 					</nav>
+					<div class="menu-toggle" onclick="toggleMenu()">☰</div> <!-- Hamburger menu icon -->
 				</header>
+				<script>
+					function toggleMenu() {
+						document.querySelector(".nav-links").classList.toggle("show");
+					}
+				</script>
 				
 
 				<!-- One -->
