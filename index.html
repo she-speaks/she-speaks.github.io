@@ -11,6 +11,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 	</head>
 	<body class="is-preload">
 
@@ -150,27 +152,29 @@
 					<section id="get-in-touch" class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
-							<form method="POST" action="https://docs.google.com/forms/u/0/d/1VkapHneFMhBqm3fB6aXXLaYLU50Vv8NR1t79IjkhVzs/formResponse">
+							<form id="contact-form">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
-										<input type="text" name="entry.2018679852" id="name" />
+										<input type="text" name="entry.2018679852" id="name" required />
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="email" name="entry.1222199710" id="email" />
+										<input type="email" name="entry.1222199710" id="email" required />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="entry.1314034460" id="message" rows="6" placeholder="What brings you to SheSpeaks? Share your goals, availability, or any questions you have. We're here to help."></textarea>
-									</div>								</div>
+										<textarea name="entry.1314034460" id="message" rows="6" placeholder="What brings you to SheSpeaks? Share your goals, availability, or any questions you have. We're here to help." required></textarea>
+									</div>
+								</div>
 								<ul class="actions special">
-									<li><input type="submit" name="send message" id="submit" value="Send Message" /></li>
+									<li><button type="submit" id="submit">Send Message</button></li>
 								</ul>
 							</form>
-
 						</div>
 					</section>
+
+
 
 
 

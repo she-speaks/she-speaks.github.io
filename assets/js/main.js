@@ -388,3 +388,37 @@ function loadContent(filePath, elementId, section="div") {
 		})
 		.catch(error => console.error('Error fetching the content:', error));
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("contact-form").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent default form submission
+
+        let formData = new FormData(this);
+
+        fetch("https://docs.google.com/forms/u/0/d/1VkapHneFMhBqm3fB6aXXLaYLU50Vv8NR1t79IjkhVzs/formResponse", {
+            method: "POST",
+            body: formData,
+            mode: "no-cors"
+        })
+        .then(() => {
+            Swal.fire({
+                title: "Success!",
+                text: "Your message has been sent successfully.",
+                icon: "success",
+                confirmButtonText: "OK",
+                timer: 3000
+            });
+
+            document.getElementById("contact-form").reset();
+        })
+        .catch((error) => {
+            console.error("Error submitting the form:", error);
+            Swal.fire({
+                title: "Error!",
+                text: "There was an error submitting your message. Please try again.",
+                icon: "error",
+                confirmButtonText: "OK"
+            });
+        });
+    });
+});
