@@ -8735,6 +8735,16 @@ input, select, textarea {
 @media screen and (min-width: 769px) {
     .header {
         background: rgba(0, 0, 0, 0.5); /* Transparent black on desktop */
+		padding: 8px 15px; /* Reduce padding for a thinner header */
+
+    }
+
+    .logo a {
+        font-size: 20px; /* Slightly smaller logo text for better fit */
+    }
+
+    .menu-toggle {
+        font-size: 22px; /* Adjust hamburger menu size */
     }
 }
 
@@ -8753,6 +8763,7 @@ input, select, textarea {
         padding: 10px 0;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     }
+
 
     .nav-links li {
         display: block;
