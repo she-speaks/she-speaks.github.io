@@ -422,3 +422,15 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+function toggleMenu() {
+	document.querySelector(".nav-links").classList.toggle("show");
+}
+
+// Close the menu when clicking a link (for mobile)
+document.querySelectorAll(".nav-links a").forEach(link => {
+	link.addEventListener("click", function() {
+		document.querySelector(".nav-links").classList.remove("show");
+	});
+});
