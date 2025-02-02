@@ -8801,6 +8801,13 @@ input, select, textarea {
     font-weight: bold;
 }
 
+.logo img {
+    height: 40px; /* Adjust this value as needed */
+    width: auto; /* Keeps aspect ratio */
+    display: block;
+}
+
+
 /* Navigation Links */
 .nav-links {
     list-style: none;
