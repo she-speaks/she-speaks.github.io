@@ -434,3 +434,38 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 		document.querySelector(".nav-links").classList.remove("show");
 	});
 });
+
+
+// FAQs
+document.querySelectorAll(".faq-question").forEach(item => {
+	item.addEventListener("click", function() {
+		this.nextElementSibling.classList.toggle("show");
+		this.classList.toggle("active");
+
+		// Toggle the arrow icon dynamically
+		if (this.classList.contains("active")) {
+			this.innerHTML = this.innerHTML.replace("⌄", "⌄"); // Keep the down arrow
+		} else {
+			this.innerHTML = this.innerHTML.replace("⌄", "⌄"); // Ensure it remains a down arrow
+		}
+	});
+});
+
+// Ensure the answer shows/hides when clicked
+document.querySelectorAll(".faq-answer").forEach(answer => {
+	answer.style.display = "none"; // Initially hide answers
+});
+
+// Ensure no style changes for the arrow
+document.addEventListener("DOMContentLoaded", function() {
+	let style = document.createElement("style");
+	style.innerHTML = `
+		.faq-answer.show {
+			display: block !important;
+		}
+	`;
+	document.head.appendChild(style);
+});
+
+
+
