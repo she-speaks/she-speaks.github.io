@@ -8879,7 +8879,8 @@ input, select, textarea {
 /* FAQ Section */
 .faq {
     max-width: 600px;
-    margin: 40px auto;
+    margin: 40px auto; /* Adds space at the top and bottom */
+    padding: 20px 0; /* Adds internal spacing */
     text-align: left;
 }
 
