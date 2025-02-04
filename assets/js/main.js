@@ -403,7 +403,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(() => {
             Swal.fire({
                 title: "Success!",
-                text: "Your message has been sent successfully.",
+                text: "Message sent successfully. Check your inbox for the confirmation email!",
                 icon: "success",
                 confirmButtonText: "OK",
                 timer: 3000
