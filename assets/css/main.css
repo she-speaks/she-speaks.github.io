@@ -8913,7 +8913,8 @@ input, select, textarea {
 
 /* FAQ Question */
 .faq-question {
-    background: #f44d7b; /* Custom color */
+    background: #f33d8d; /* Custom color */
+	opacity: .8;
     color: white;
     padding: 18px;
     cursor: pointer;
