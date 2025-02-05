@@ -435,3 +435,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+function updatePurpose(event) {
+    event.preventDefault(); // Prevent default jump behavior
+
+    // Get the purpose from the button
+    const purposeValue = event.target.getAttribute('data-purpose');
+
+    // Set the dropdown value in the form
+    const purposeDropdown = document.getElementById('purpose');
+    if (purposeDropdown) {
+        purposeDropdown.value = purposeValue;
+    }
+
+    // Smooth scroll to the form
+    const formSection = document.getElementById('get-in-touch');
+    if (formSection) {
+        formSection.scrollIntoView({ behavior: 'smooth' });
+    }
+}
