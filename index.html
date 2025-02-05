@@ -29,7 +29,7 @@
 						<ul class="nav-links">
 							<li><a href="#about_us">About</a></li>
 							<li><a href="#get-in-touch">Join us</a></li>
-							<li><a href="#get-in-touch">Contact</a></li>
+							<li><a href="#contacts">Contact</a></li>
 							<li><a href="#founders">Founders</a></li>
 							<li><a href="#faqs">FAQs</a></li>
 						</ul>
@@ -217,28 +217,31 @@
 					<section id="get-in-touch" class="wrapper style1 align-center">
 						<div class="inner medium">
 							<h2>Get in touch</h2>
-							<form id="contact-form">
+							<form id="contact-form" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeLR_53Tfv8HJpVSF36oeo7H5rhRj89Gum0GwCPSo_IS_LJhg/formResponse">
 								<div class="fields">
 									<div class="field half">
 										<label for="name">Name</label>
-										<input type="text" name="entry.2018679852" id="name" required />
+										<input type="text" name="entry.154252494" id="name" required/>
 									</div>
 									<div class="field half">
 										<label for="email">Email</label>
-										<input type="email" name="entry.1222199710" id="email" required />
+										<input type="email" name="emailAddress" id="email" required/>
 									</div>
 									<div class="field">
 										<label for="purpose">I would like to...</label>
-										<select name="entry.616296625" id="purpose" required>
+										<select name="entry.1760140065" id="purpose" required>
 											<option value="">- Choose one -</option>
-											<option value="Learn English">Learn English</option>
-											<option value="Become a tutor">Become a tutor</option>
-											<option value="Ask a question">Ask a question</option>
+											<option value="Learn English">📚 Learn English</option>
+											<option value="Become a tutor">👩‍🏫 Become a tutor</option>
+											<option value="Ask a question">🙋 Ask a question</option>
 										</select>
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="entry.1314034460" id="message" rows="6" placeholder="What brings you to SheSpeaks? Share your goals, availability, or any questions you have. We're here to help." required></textarea>
+										<textarea name="entry.683256791" id="message" rows="6" placeholder="What brings you to SheSpeaks? Share your goals, availability, or any questions you have. We're here to help ☺️ " required></textarea>
+									</div>
+									<div>
+									<input type="hidden" name="dlut" value="1738746409055">
 									</div>
 								</div>
 								<ul class="actions special">
@@ -249,11 +252,8 @@
 					</section>
 
 
-
-
-
 				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
+					<footer id="contacts" class="wrapper style1 align-center">
 						<div class="inner">
 							<ul class="icons">
 								<!-- <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li> -->
@@ -276,14 +276,12 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-
-	<script>
-		// Load content into different elements
-		loadContent('text/about_us.txt', 'about_us_text', section="p");
-		loadContent('text/founders_story.txt', 'founders_story_text', section="p");
-		loadContent('text/profile_laila.txt', 'profile_laila', section="p");
-		loadContent('text/profile_alice.txt', 'profile_alice');
-	</script>
+			<script>
+				// Load content into different elements
+				loadContent('text/about_us.txt', 'about_us_text', section="p");
+				loadContent('text/founders_story.txt', 'founders_story_text', section="p");
+				loadContent('text/profile_laila.txt', 'profile_laila', section="p");
+				loadContent('text/profile_alice.txt', 'profile_alice');
+			</script>
 	</body>
 </html>
