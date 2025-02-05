@@ -2788,10 +2788,12 @@ input, select, textarea {
 			-ms-flex-direction: column;
 			flex-direction: column;
 			margin-left: 0;
+			text-align: center; 
 		}
 
 			ul.actions.stacked li {
 				padding: 1.3rem 0 0 0;
+				display: inline-block;
 			}
 
 				ul.actions.stacked li:first-child {
@@ -8972,4 +8974,9 @@ input, select, textarea {
     height: auto;  /* Maintains aspect ratio */
     width: auto;  /* Ensures it scales naturally */
     display: block; /* Removes any extra spacing issues */
+}
+
+.content h2 {
+    text-align: center; /* Centers only the h2 */
+    margin-bottom: 20px; /* Adjust spacing if needed */
 }
